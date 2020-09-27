@@ -1,68 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# POKE API TEST!
 
-## Available Scripts
+Hi! It's my number **1** test.
 
-In the project directory, you can run:
+During my learning process I've been looking for and solving tests for React - Dev Junior vacancies.
 
-### `yarn start`
+The quest was to create a React Page that displays all existing Pokémon names using the 'https://pokeapi.co/' API. **The project should use pagination.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+My first step was to start the project with static data and stylize the page.
+Next, I opened the API to identify the pattern of responses.
+Then, using the react hooks, I created the state for the Pokemon's name and fetched the data.
+Then I created a new state for the 'URL' to be changed in 'next' and 'previous' pagination.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+# PLUS and DIFERENCES FROM ANOTHER PROJECTS
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ **HOOKS**
+ - Using the hook 'useEffect' passing the 'URL' state as a dependency caused the 'useEffect' to be called again whenever this state changes, for example in the function that calls the next or previous page.
 
-### `yarn build`
+ **PROPS**
+ - I decided to put the Pokemon's image, and for that it was necessary to create a prop to pass the url to get the new images.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+With this project I've practiced:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 1. Hooks
+ 2. Styling
+ 3. States
+ 4. API Request
+ 5. Props
+ 6. Global Styles
+ 7. Code pattern
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### RESULT
+![RESULT](https://github.com/wesleymoliveira/react-tests-pokeApi/blob/master/assets/Result.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### RESULT-BOTTOM
+![RESULT-BOT](https://github.com/wesleymoliveira/react-tests-pokeApi/blob/master/assets/Result-bottom.png)
 
-## Learn More
+## Libs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⚛ React `yarn create react-app`
+> **Note:** This app was created  with create react-app. A ready build setup with no webpack or babel configuration.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 💅🏾 Styled - Components   `yarn add styled-components `
+> **Note:** Allow the CSS  use to style any components .
 
-### Code Splitting
+ 💅🏾 Polished  `yarn add polished `
+> **Note:** Toolset for writing styles .
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+ - React-icons `yarn add react-icons`
+> **Note:** Popular icons.
 
-### Analyzing the Bundle Size
+- Axios `yarn add axios`
+> **Note:** Http Request
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+...
 
-### Making a Progressive Web App
+## How to
+You will need `yarn`  installed on your machine.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Run the following commands inside the project folder:
 
-### Advanced Configuration
+1.  `git clone https://github.com/wesleymoliveira/react-tests-pokeApi.git`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+2.  `yarn start;`
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
