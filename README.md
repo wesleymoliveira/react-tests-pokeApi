@@ -1,4 +1,4 @@
-# POKE API TEST!
+# POKE API PROJECT!
 
 Check it out here: https://react-hooks-pokeapi.vercel.app/
 
